@@ -1,7 +1,8 @@
 {
-    "folders": [
-        {
-            "path": "../../Python_Lessons"
-        }
-    ]
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
 }
