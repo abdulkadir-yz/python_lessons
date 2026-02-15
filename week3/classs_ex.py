@@ -37,7 +37,7 @@ class BookCollection:
             status = "Read" if book.read else "Not read"
             print(f"{book.name} by {book.author} ({book.release_date}) - {status}")
 
-
+#This code defines a `Book` class with attributes for the book's name, author, release date, and read status. The `BookCollection` class manages a collection of books, allowing you to add books, mark them as read, and list all books in the collection. The example usage demonstrates how to create books, add them to a collection, and mark one as read.
 if __name__ == "__main__":
     b1 = Book("1984", "George Orwell", 1949)
     b2 = Book("Brave New World", "Aldous Huxley", 1932)
