@@ -1,8 +1,8 @@
 def counting_sort(arr, max_val):
     # -------------------------------------------------------------------
     # STEP 1: CREATE COUNT ARRAY
-    # We create an array of zeros with size (max_val + 1)
-    # Why +1? Because we use values as indexes.
+    # We create an array of zeros with size (max_val + 1) . 
+    # Why +1? Because we use values as indexes. If we use max_val as size, we can only index from 0 to max_val-1, but we need to index up to max_val.
     # If max_val=8, we need indexes 0-8, which means 9 elements (8+1)
     # Example: max_val=8 → count = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     #                       index:   0  1  2  3  4  5  6  7  8
