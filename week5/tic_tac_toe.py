@@ -128,7 +128,7 @@ def play():
             # Why `continue` instead of `else`? Because there are multiple
             # validation checks below. Using `continue` for each invalid case
             # keeps the code flat and readable instead of deeply nested if/else.
-            print("❌ Invalid input! Please enter a number between 1 and 9.")
+            print("Invalid input! Please enter a number between 1 and 9.")
             continue
 
         # range guard
@@ -137,7 +137,7 @@ def play():
         # would either crash (IndexError) or give unexpected behavior (negative
         # indices wrap around in Python, so board[-1] == board[8]).
         if spot < 1 or spot > 9:
-            print("❌ Out of range! Please enter a number between 1 and 9.")
+            print("Out of range! Please enter a number between 1 and 9.")
             continue
 
         # already-taken guard
@@ -148,7 +148,7 @@ def play():
         spot -= 1
 
         if board[spot] != "":
-            print("❌ Spot already taken! Pick another one.")
+            print("Spot already taken! Pick another one.")
             continue
 
         # --- place the token ---
@@ -170,7 +170,7 @@ def play():
         if winner:
             # `winner` is truthy ("X" or "O"), so we announce the winner and
             # `break` out of the while True loop, ending the game.
-            print(f"🎉 Player {winner} wins! Congratulations!")
+            print(f" Player {winner} wins! Congratulations!")
             break
 
         # --- check for a tie ---
@@ -180,7 +180,7 @@ def play():
         # the winning move. If we checked for a tie first, we'd incorrectly
         # declare a tie instead of a win on the final move.
         if turns == 9:
-            print("🤝 It's a tie!")
+            print("It's a tie!")
             break 
 
         # --- swap turns ---
