@@ -1,3 +1,31 @@
+""" 
+TWO SUM 
+You are given an array of integers, nums, and an integer, target. Your goal is to find indices of two distinct elements in nums whose sum equals target. You can’t use the same element twice, and you may return the indices in any order. You can assume there is exactly one valid solution for each input.
+
+Example 1:
+
+Input: nums = [2,7,11,15], target = 9
+Output: [0, 1]
+Explanation: nums[0] + nums[1] = 9, so return [0, 1].
+Example 2:
+
+Input: nums = [3,2,4], target = 6
+Output: [1, 2]
+Explanation: nums[1] + nums[2] = 6, so return [1, 2].
+Example 3:
+
+Input: nums = [3,3], target = 6
+Output: [0, 1]
+Explanation: nums[0] + nums[1] = 6, so return [0, 1].
+Constraints:
+
+2 <= nums.length <= 10^4
+-10^9 <= nums[i] <= 10^9
+-10^9 <= target <= 10^9
+Exactly one valid solution exists. 
+
+"""
+
 nums = [2, 7, 11, 15]
 
 target = 18
@@ -18,6 +46,8 @@ print(result)
 
 
 
+
+#Get help from AI and ask how can i make easy way to solve this problem?
 
 
 # nums = [2, 7, 11, 15]
