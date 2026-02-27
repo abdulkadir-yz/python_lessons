@@ -26,39 +26,49 @@ Exactly one valid solution exists.
 
 """
 
-nums = [2, 7, 11, 15]
-
-target = 18
-
-def two_sum(nums, target):
-    lenth = len(nums)
-    i = 0
-    while i < lenth:
-        j = i + 1
-        while j < lenth:
-            if nums[i] + nums[j] == target:
-                return [i, j]
-            j += 1
-        i += 1
-    return []
-result = two_sum(nums, target)
-print(result)
-
-
-
-
-#Get help from AI and ask how can i make easy way to solve this problem?
-
-
 # nums = [2, 7, 11, 15]
 
-# target = 9
+# target = 18
 
-# def two_sum(nums, target): 
-#     for i in range(len(nums)):
-#         for j in range(i + 1, len(nums)):
+# def two_sum(nums, target):
+#     lenth = len(nums)
+#     i = 0
+#     while i < lenth:
+#         j = i + 1
+#         while j < lenth:
 #             if nums[i] + nums[j] == target:
 #                 return [i, j]
+#             j += 1
+#         i += 1
 #     return []
 # result = two_sum(nums, target)
 # print(result)
+
+#Get help from AI and ask how can i make easy way to solve this problem?
+
+nums = [2, 7, 11, 15]
+
+target = 9
+
+def two_sum(nums, target): 
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i, j]
+    return []
+
+result = two_sum(nums, target)
+print(result)
+
+#Solition 2: Using a hash map (dictionary) to store the indices of the numbers we have seen so far. 
+# This allows us to check if the complement (target - current number) exists in the hash map in O(1) time.
+def two_sum2(nums, target):
+    mapping = {}
+    for i, num in enumerate(nums):
+        diff = target - num
+        if diff in mapping and mapping[diff] != i:
+            return [mapping[diff], i]
+        mapping[num] = i
+    return []
+result2 = two_sum2(nums, 26)
+print(result2)
