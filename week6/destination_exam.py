@@ -48,3 +48,8 @@ def dest_city(paths):
 print(dest_city([["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]]))  # "Sao Paulo"
 print(dest_city([["B", "C"], ["D", "B"], ["C", "A"]]))  # "A"
 print(dest_city([["A", "Z"]]))
+
+# Solution two - O(n)
+def dest_city(paths):
+    for path in paths:
+        source = path[0] #
