@@ -1,3 +1,4 @@
+from datetime import datetime
 students = []
 available_courses = {"math", "science", "history", "english", "art", "music"}
 
