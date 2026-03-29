@@ -16,10 +16,14 @@
 # for x,y in my_dict.items():
 #     print(f"Key: {x}, Value: {y}")
 
-my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
-input_number = int(input("Enter a number to search for: "))
-for number in my_list:
-    if number == input_number:
-        print(f"Found {input_number}!")
-        break
+# input_number = int(input("Enter a number to search for: "))
+# for number in my_list:
+#     if number == input_number:
+#         print(f"Found {input_number}!")
+#         break
+
+range(0, 10)
+for i in range(0, 10):
+    print(i * 2)
